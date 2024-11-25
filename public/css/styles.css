@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1e1e2f;
+  overflow: hidden;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  z-index: 10;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(45deg, #ff6b6b, #f06595);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #f06595, #ff6b6b);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff6b6b, #f06595);
+  animation: float 10s infinite ease-in-out;
+  opacity: 0.7;
+}
+
+.circle:nth-child(1) {
+  top: 10%;
+  left: 15%;
+}
+
+.circle:nth-child(2) {
+  top: 60%;
+  left: 70%;
+  animation-delay: 3s;
+}
+
+.circle:nth-child(3) {
+  top: 30%;
+  left: 50%;
+  animation-delay: 6s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-20px) rotate(360deg);
+  }
+}
+.google-btn {
+  background: transparent;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin-top: 30px;
+  color: #f06595;
+}
+
+.google-btn:hover {
+  background: #f06595;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  border: transparent;
+}
+
+.input {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid white;
+  outline: none;
+  font-size: 1rem;
+  display: block;
+  margin-left: 350px;
+  color: white;
+}
+.input:focus{
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+}
+.log{
+  background: transparent;
+  margin-top: 40px;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #f06595;
+  color: #f06595;
+}
